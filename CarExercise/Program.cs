@@ -10,6 +10,11 @@ namespace CarExercise
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Car tehtävä:");
+            Car car1 = new Car();
+            car1.AskData();
+            Console.WriteLine($"Auton väri on nyt {car1.color}");
+            Console.ReadLine();
         }
     }
 }
