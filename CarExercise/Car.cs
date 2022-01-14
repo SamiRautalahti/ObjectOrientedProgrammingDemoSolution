@@ -10,7 +10,7 @@ namespace CarExercise
     {
         public string color;
         public string brand;
-        public int speed;
+        public double speed;
 
         public Car()
         {
@@ -19,7 +19,7 @@ namespace CarExercise
             this.speed = 0;
             //AskData
         }
-        
+
         public void AskData()
         {
             Console.Write("Auton väri? ");
@@ -29,6 +29,7 @@ namespace CarExercise
             Console.Write("Anna auton nopeus? ");
             this.speed = int.Parse(Console.ReadLine());
 
+
         }
 
         public void ShowCarInfo()
@@ -36,14 +37,22 @@ namespace CarExercise
             Console.WriteLine($"Auton merkki on {this.brand}, väri on nyt {this.color} ja nopeus on {this.speed}");
 
         }
-        public void Accelerate(int change)
+        public void Accelerate(double newSpeed)
         {
-            
-            
+            if (newSpeed > 0)
+            {
+                this.speed += newSpeed;
+            }
+            else
+            {
+                Console.WriteLine("Negatiivinen kiihdytyksen arvo ei kelpaa");
+            }
         }
+
 
         public void Brake()
         {
+            this.speed = this.speed - (0.10 * this.speed);
 
         }
     }
