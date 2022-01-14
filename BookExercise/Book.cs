@@ -49,12 +49,33 @@ namespace BookExercise
         public void SetId(string idValue)
         {
             //tarkistaa tässä onko id:n pituus viisi merkkiä
+            if (idValue.Length == 5)
+            {
+                this.id = idValue;
+            }
+            else
+            {
+                this.id = "not valid";
+            }
+            
         }
         public void CompareBook(Book book)
         {
+         
             //verrata parametrinä olevan olion kappalehintaa kutsuttavan kappalehintaan
             // palauta tieto siitä, kumpi kirja on kalliimpi.
-
+            if (this.price > book.price)
+            {
+                Console.WriteLine($"{this.title} on kalliimpi kuin {book.title}");
+            }
+            else if (this.price < book.price)
+            {
+                Console.WriteLine($"{book.title} on kalliimpi kuin {this.title}");
+            }
+            else
+            {
+                Console.WriteLine($"{this.title} on samanhintainen kuin {book.title}");
+            }
             Console.WriteLine($"kutsuva olio {this.title}");
             Console.WriteLine($"parametrina tuleva olio {book.title}");
         }

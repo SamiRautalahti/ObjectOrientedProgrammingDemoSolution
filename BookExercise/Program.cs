@@ -13,6 +13,7 @@ namespace BookExercise
             Console.WriteLine("This is Book exercise!");
             Book book1 = new Book();
             book1.title = "Matematiikka 1";
+            book1.SetId("A2345");
             Console.WriteLine("Ensimmäinen kirja: " + book1.title);
 
             Book book2 = new Book("Aapinen");
@@ -23,6 +24,8 @@ namespace BookExercise
             Console.WriteLine(book3.GetBookInformation());
 
             book3.CompareBook(book2);
+
+            Console.ReadLine();
         }
     }
 }
