@@ -22,7 +22,7 @@ namespace CarExercise
             Car car2 = new Car();
             car2.AskData();
             car2.Accelerate(10);
-            Console.WriteLine($"\nNopeutta muutettu {car2.speed}");
+            Console.WriteLine($"\nNopeutta muutettu, nopeus on nyt {car2.speed}");
             car2.Brake();
             Console.WriteLine($"\nJarrutettu, nopeus on nyt {car2.speed}");
             Console.WriteLine("Auto 1:");
