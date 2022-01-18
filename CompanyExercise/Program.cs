@@ -14,14 +14,17 @@ namespace CompanyExercise
             Console.WriteLine("\n\nLevykauppa");
             company1.title = "Record Collector Oy";
             company1.address = "Paraistentie 5 B 4, 53650 Lappeenranta";
-            company1.phone = "+358458766327";
-            company1.outcome = 250000;
-            company1.expense = 45000;
+            company1.phone = "0458766327";
+            company1.outcome = 40000;
+            company1.expense = 55000;
             company1.PrintInfo();
             company1.CalculateProfit();
 
             Company company2 = new Company(company1);
             Console.WriteLine("Tiedot kopioitu.");
+
+            Company company3 = new Company(company2);
+            Console.WriteLine("\n\n");
             Console.ReadLine();
 
 
