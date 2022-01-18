@@ -15,8 +15,8 @@ namespace CompanyExercise
             company1.title = "Rare Records Collector Oy";
             company1.address = "Paraistentie 5 B 4, 53650 Lappeenranta";
             company1.phone = "0458766327";
-            company1.outcome = 40000;
-            company1.expense = 55000;
+            company1.outcome = 400000;
+            company1.expense = 5000;
             company1.PrintInfo();
             company1.CalculateProfit();
 
@@ -25,21 +25,23 @@ namespace CompanyExercise
             company1.title = "Mikon pikakuljetus Oy";
             company1.address = "Porslankarintie 7, 58760 Lappeenranta";
             company1.phone = "0448456328";
-            company1.outcome = 20000;
-            company1.expense = 35000;
+            company1.outcome = 200;
+            company1.expense = 400;
             company1.PrintInfo();
             company1.CalculateProfit();
 
             Company company3 = new Company(company1);
+            Console.WriteLine("\n\n");
             Console.WriteLine("Tiedot kopioitu.");
             company3.PrintInfo();
-            Console.WriteLine("\n\n");
+            
 
             Company company4 = new Company("Taxellin veronkierto Oy", "Vilppikuja 68, 54100 Joutseno", "0444475723", 100000, 20000);
             company4.PrintInfo();
+            company4.CalculateProfit();
             Console.WriteLine("\n\n");
 
-            Company company5 = new Company("Teron ruokapalvelu Oy", "Lounaskatu 8, 55800 Imatra", "0455587834", 10000, 20000);
+            Company company5 = new Company("Teron ruokapalvelu Oy", "Lounaskatu 8, 55800 Imatra", "0455587834", 1000, 20000);
             company5.PrintInfo();
             company5.CalculateProfit();
             Console.WriteLine("\n\n");
