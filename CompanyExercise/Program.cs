@@ -20,10 +20,28 @@ namespace CompanyExercise
             company1.PrintInfo();
             company1.CalculateProfit();
 
-            Company company2 = new Company(company1);
-            Console.WriteLine("Tiedot kopioitu.");
+            Company company2 = new Company();
+            Console.WriteLine("\n\nKuljetusliike");
+            company1.title = "Mikon pikakuljetus Oy";
+            company1.address = "Porslankarintie 7, 58760 Lappeenranta";
+            company1.phone = "0448456328";
+            company1.outcome = 20000;
+            company1.expense = 35000;
+            company1.PrintInfo();
+            company1.CalculateProfit();
 
-            Company company3 = new Company(company2);
+            Company company3 = new Company(company1);
+            Console.WriteLine("Tiedot kopioitu.");
+            company3.PrintInfo();
+            Console.WriteLine("\n\n");
+
+            Company company4 = new Company("Taxellin veronkierto Oy", "Vilppikuja 68, 54100 Joutseno", "0444475723", 100000, 20000);
+            company4.PrintInfo();
+            Console.WriteLine("\n\n");
+
+            Company company5 = new Company("Teron ruokapalvelu Oy", "Lounaskatu 8, 55800 Imatra", "0455587834", 10000, 20000);
+            company5.PrintInfo();
+            company5.CalculateProfit();
             Console.WriteLine("\n\n");
             Console.ReadLine();
 
