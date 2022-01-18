@@ -35,5 +35,10 @@ namespace CompanyExercise
         {
             Console.WriteLine($"Rakennuksen osoite: {this.address}, rakennusvuosi: {this.buildingYear}");
         }
+
+        public override string ToString()
+        {
+            return $"luokka: {base.ToString()}, osoite: {this.address}, rakennusvuosi: {this.buildingYear}";
+        }
     }
 }
