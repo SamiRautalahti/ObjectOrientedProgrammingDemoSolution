@@ -12,7 +12,7 @@ namespace CompanyExercise
         {
             Company company1 = new Company();
             Console.WriteLine("\n\nLevykauppa");
-            company1.title = "Rare Records Collector Oy";
+            company1.title = "Rare Records And Obscurities Collector Oy";
             company1.address = "Paraistentie 5 B 4, 53650 Lappeenranta";
             company1.phone = "0458766327";
             company1.outcome = 400000;
@@ -37,12 +37,12 @@ namespace CompanyExercise
             Console.WriteLine("\n\n");
 
 
-            Company company4 = new Company("Taxellin veronkierto Oy", "Vilppikuja 68, 54100 Joutseno", "0444475723", 100000, 20000);
+            Company company4 = new Company("Taxellin veronkierto Oy", "Vilppikuja 58, 54100 Joutseno", "0444475723", 100000, 20000);
             company4.PrintInfo();
             company4.CalculateProfit();
             Console.WriteLine("\n\n");
 
-            Company company5 = new Company("Teron ruokapalvelu Oy", "Lounaskatu 8, 55800 Imatra", "0455587834", 1000, 20000);
+            Company company5 = new Company("Teron ruokapalvelu Oy", "Lounaskatu 2, 55800 Imatra", "0455587834", 1000, 20000);
             company5.PrintInfo();
             company5.CalculateProfit();
             Console.WriteLine("\n\n");
