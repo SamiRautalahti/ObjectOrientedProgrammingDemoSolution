@@ -40,5 +40,10 @@ namespace CompanyExercise
         {
             return $"luokka: {base.ToString()}, osoite: {this.address}, rakennusvuosi: {this.buildingYear}";
         }
+        public void CalculateAge()
+        {
+            int age = 2022 - this.buildingYear;
+            Console.WriteLine($"Rakennuksen ikä: {age}");
+        }
     }
 }
