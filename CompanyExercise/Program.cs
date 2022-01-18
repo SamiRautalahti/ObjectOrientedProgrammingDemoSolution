@@ -12,7 +12,7 @@ namespace CompanyExercise
         {
             Company company1 = new Company();
             Console.WriteLine("\n\nLevykauppa");
-            company1.title = "Record Collector Oy";
+            company1.title = "Rare Records Collector Oy";
             company1.address = "Paraistentie 5 B 4, 53650 Lappeenranta";
             company1.phone = "0458766327";
             company1.outcome = 40000;
