@@ -8,42 +8,63 @@ namespace CompanyExercise
 {
     class Company
     {
-        public string address;
-        public int buildingYear;
+            public string title;
+            public string address;
+            public string phone;
+            public double outcome;
+            public double expense;
 
-        // empty constructor
         public Company()
         {
+            this.title = string.Empty;
             this.address = string.Empty;
-            this.buildingYear = 0;
+            this.phone = string.Empty;
+            this.outcome = 0;
+            this.expense = 0;
         }
-
-        public Company(string address, int buildingYear)
+        public Company(string title, string address, string phone, double outcome, double expense)
         {
+            this.title = title;
             this.address = address;
-            this.buildingYear = buildingYear;
+            this.phone = phone;
+            this.outcome = outcome;
+            this.expense = expense;
         }
-
-        // copy constructor
-        public Company(Company company)
+        public Company(Company previousCompany) // copy constructor
         {
-            this.address = company.address;
-            this.buildingYear = company.buildingYear;
+            title = previousCompany.title;
+            address = previousCompany.address;
+            phone = previousCompany.phone;
+            outcome = previousCompany.outcome;
+            expense = previousCompany.expense;
         }
-
         public void PrintInfo()
         {
-            Console.WriteLine($"Rakennuksen osoite: {this.address}, rakennusvuosi: {this.buildingYear}");
+            Console.WriteLine($"Yrityksen nimi: {this.title}, osoite: {this.address}, puhelin: {this.phone}, tulot: {this.outcome}, menot: {this.expense}");
+        }
+        public void CalculateProfit()
+        {
+            double profit = ((this.outcome - this.expense) / this.expense * 100);
+            if(profit < 100)
+            {
+                Console.WriteLine($"Voitto:{profit}%. Kehnosti menee");
+            }
+            if(profit >= 100 && profit < 200 )
+            {
+                Console.WriteLine($"Voitto:{profit}%. Välttävästi menee");
+            }
+            if (profit >= 200 && profit < 300)
+            {
+                Console.WriteLine($"Voitto:{profit}%. Tyydyttävästi menee");
+            }
+            if (profit >= 300)
+            {
+                Console.WriteLine($"Voitto:{profit}%. Hyvin menee");
+            }
         }
 
-        public override string ToString()
-        {
-            return $"luokka: {base.ToString()}, osoite: {this.address}, rakennusvuosi: {this.buildingYear}";
-        }
-        public void CalculateAge()
-        {
-            int age = 2022 - this.buildingYear;
-            Console.WriteLine($"Rakennuksen ikä: {age}");
-        }
+
+
     }
-}
+    }
+
