@@ -34,7 +34,8 @@ namespace CompanyExercise
             Console.WriteLine("\n\n");
             Console.WriteLine("Tiedot kopioitu.");
             company3.PrintInfo();
-            
+            Console.WriteLine("\n\n");
+
 
             Company company4 = new Company("Taxellin veronkierto Oy", "Vilppikuja 68, 54100 Joutseno", "0444475723", 100000, 20000);
             company4.PrintInfo();
