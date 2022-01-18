@@ -22,13 +22,13 @@ namespace CompanyExercise
 
             Company company2 = new Company();
             Console.WriteLine("\n\nKuljetusliike");
-            company1.title = "Mikon pikakuljetus Oy";
-            company1.address = "Porslankarintie 7, 58760 Lappeenranta";
-            company1.phone = "0448456328";
-            company1.outcome = 200;
-            company1.expense = 400;
-            company1.PrintInfo();
-            company1.CalculateProfit();
+            company2.title = "Mikon pikakuljetus Oy";
+            company2.address = "Porslankarintie 7, 58760 Lappeenranta";
+            company2.phone = "0448456328";
+            company2.outcome = 200;
+            company2.expense = 400;
+            company2.PrintInfo();
+            company2.CalculateProfit();
 
             Company company3 = new Company(company1);
             Console.WriteLine("\n\n");
