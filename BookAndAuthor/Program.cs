@@ -1,4 +1,5 @@
 ﻿using System;
+using Literature;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,16 +13,23 @@ namespace BookAndAuthor
         {
             Console.WriteLine("Tehtävä book");
 
-            Book book1 = new Book();
-            book1.Name = "ABC";
+            //double area = Math.Round(Math.PI * 0.25 * 0.25, 2);
 
-            Book book2 = new Book("Matematiikka 1");
+            Book book1 = new Book("Astrid Lindgren");
+            book1.Name = "Peppi Pitkätossu";
 
-            Console.WriteLine($"{book1.Id}.kirjan nimi on: {book1.Name}");
-            Console.WriteLine($"{book2.Id}.kirjan nimi on: {book2.Name}");
+
+            //Book book2 = new Book("Matematiikka 1");
+
+            //Console.WriteLine($"{book1.Id}.kirjan nimi on: {book1.Name}");
+            //Console.WriteLine($"{book2.Id}.kirjan nimi on: {book2.Name}");
             Console.WriteLine($"Book-luokan counter = {Book.counter}");
+            
+
+            Author author1 = new Author("Astrid Lindgren", "14.11.1907", book1);
+            author1.PrintInfo();
             Console.ReadLine();
-        
+
         }
     }
 }

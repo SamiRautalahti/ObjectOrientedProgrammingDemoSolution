@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookAndAuthor
+namespace BookOld
 {
     class Book
     {
         private const int MaxLength = 25;
-
+        private string author;
         private string name;
         private int id;
         public static int counter = 1;
@@ -50,6 +50,16 @@ namespace BookAndAuthor
         {
             get { return id; }
             set { id = value; }
+        }
+
+        public string Author { 
+            get => author; 
+            //set => author = value; 
+        }
+
+        public override string ToString()
+        {
+            return $"{this.Name}, {this.Author}";
         }
     }
 }
