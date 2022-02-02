@@ -22,7 +22,7 @@ namespace VehicleAndCar
         }
         public virtual void PrintInfo()
         {
-            Console.WriteLine($"Brand: {this.brand}, Model: {this.model}, Model Year: {this.modelYear}, Price: {this.price} EUR.");
+            Console.WriteLine($"Brand: {this.brand} | Model: {this.model} | Model Year: {this.modelYear} | Price: {this.price} EUR.");
         }
 
     }
