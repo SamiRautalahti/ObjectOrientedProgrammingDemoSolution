@@ -40,7 +40,7 @@ namespace VehicleAndCar
 
         public override string ToString()
         {
-            return $"Moottori: {this.engine}, Tyyppi: {this.type}, Ovien lukumäärä: {this.doors}";
+            return $"Brand: {base.brand} | Model: {base.model} | Model year: {base.modelYear} | Price: {base.price} | Engine: {this.engine} | Type: {this.type} | Doors: {this.doors}";
         }
     }
 }

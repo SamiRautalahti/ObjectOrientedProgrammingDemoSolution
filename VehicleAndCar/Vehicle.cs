@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VehicleAndCar
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected string brand;
         protected string model;
@@ -22,7 +22,7 @@ namespace VehicleAndCar
         }
         public virtual void PrintInfo()
         {
-            Console.WriteLine($"Merkki: {this.brand}, Tyyppi: {this.model}, Vuosimalli: {this.modelYear}, Hinta: {this.price} EUR.");
+            Console.WriteLine($"Brand: {this.brand}, Model: {this.model}, Model Year: {this.modelYear}, Price: {this.price} EUR.");
         }
 
     }
