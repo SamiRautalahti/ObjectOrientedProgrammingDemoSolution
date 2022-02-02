@@ -67,7 +67,7 @@ namespace VehicleAndCar
             Console.WriteLine("***********************************************************************************************\n");
 
 
-            //Testing typeconversion from truck -> car
+            //Testing type conversion from truck -> car
             Car truck1ToCar = truck1;
             truck1ToCar.TestTypeConversion();
 

@@ -42,10 +42,10 @@ namespace VehicleAndCar
         {
             return $"Brand: {base.brand} | Model: {base.model} | Model year: {base.modelYear} | Price: {base.price} | Engine: {this.engine} | Type: {this.type} | Doors: {this.doors}";
         }
-        //Extra method only visible or this class, used to verify typeconversion
+        //Extra method only visible or this class, used to verify type conversion
         public void TestTypeConversion()
         {
-            Console.WriteLine($"\n\nTypeconversion was successfull if you see this text!\n");
+            Console.WriteLine($"\n\nType conversion was successfull if you see this text!\n");
         }
     }
 }
