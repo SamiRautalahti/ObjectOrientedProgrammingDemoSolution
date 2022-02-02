@@ -18,7 +18,7 @@ namespace VehicleAndCar
             Vehicle vehicleD = new Vehicle("Dodge", "Challenger", 1970, 68000);*/
 
             Car carA = new Car("Toyota", "Corolla", 2009, 6500, "1.4L", "Hatchback", 4);
-            Car carB = new Car("Toyota", "Corolla", 2009, 6500, "1.4L", "Hatchback", 4);
+            Car carB = new Car("Toyota", "Celica", 2012, 7500, "1.6L", "Sedan", 4);
             Car carC = new Car("Toyota", "Carina II", 1990, 3000, "1.6L", "Sedan", 4);
 
             Truck truck1 = new Truck("Toyota", "Carina II", 1990, 3000, "1.6L", "Sedan", 4);
