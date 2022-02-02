@@ -20,7 +20,7 @@ namespace VehicleAndCar
             this.modelYear = modelYear;
             this.price = price;
         }
-        public virtual void PrintInfo()
+        public virtual void PrintInformation()
         {
             Console.WriteLine($"Brand: {this.brand} | Model: {this.model} | Model Year: {this.modelYear} | Price: {this.price} EUR.");
         }

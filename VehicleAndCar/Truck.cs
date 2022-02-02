@@ -23,9 +23,9 @@ namespace VehicleAndCar
             return this.consumption * this.load;
         }
 
-        public override void PrintInfo()
+        public override void PrintInformation()
         {
-            base.PrintInfo();
+            base.PrintInformation();
             Console.WriteLine($"Weight: {this.load}kg | Consumption: {this.consumption}/kg");
         }
     }

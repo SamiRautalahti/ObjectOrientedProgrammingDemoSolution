@@ -12,7 +12,7 @@ namespace VehicleAndCar
         protected string type;
         protected int doors;
 
-        public Car(string brand, string model, int modelYear, double price, string engine, string type, int doors) : base (brand,model,modelYear,price)
+        public Car(string brand, string model, int modelYear, double price, string engine, string type, int doors) : base(brand, model, modelYear, price)
         {
             this.engine = engine;
             this.type = type;
@@ -33,7 +33,7 @@ namespace VehicleAndCar
 
         }
 
-    public override int GetHashCode()
+        public override int GetHashCode()
         {
             return 0;
         }
@@ -41,6 +41,11 @@ namespace VehicleAndCar
         public override string ToString()
         {
             return $"Brand: {base.brand} | Model: {base.model} | Model year: {base.modelYear} | Price: {base.price} | Engine: {this.engine} | Type: {this.type} | Doors: {this.doors}";
+        }
+        //Extra method only visible or this class, used to verify typeconversion
+        public void TestTypeConversion()
+        {
+            Console.WriteLine($"\n\nTypeconversion was successfull if you see this text!\n");
         }
     }
 }

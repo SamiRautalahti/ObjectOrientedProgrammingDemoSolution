@@ -30,11 +30,11 @@ namespace VehicleAndCar
             Truck truck3 = new Truck("Scania", "R560", 2008, 19840, "16L", "Truck", 2, 14000, 2000);
 
 
-            //vehicleA.PrintInfo();
+            //vehicleA.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
-            //vehicleB.PrintInfo();
+            //vehicleB.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
-            //vehicleC.PrintInfo();
+            //vehicleC.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
             Console.WriteLine(carA.ToString());
             Console.WriteLine("***********************************************************************************************\n");
@@ -42,6 +42,8 @@ namespace VehicleAndCar
             Console.WriteLine("***********************************************************************************************\n");
             Console.WriteLine(carC.ToString());
             Console.WriteLine("***********************************************************************************************\n");
+
+            Console.WriteLine("\n");
 
             //Object.Equals Method:
             if (carA.Equals(carB) == true)
@@ -53,15 +55,23 @@ namespace VehicleAndCar
                 Console.WriteLine($"The cars aren't the same brand or model at all");
             }
 
+            Console.WriteLine("\n");
+
             //Truck printinfo:
             Console.WriteLine("***********************************************************************************************\n");
-            truck1.PrintInfo();
+            truck1.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
-            truck2.PrintInfo();
+            truck2.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
-            truck3.PrintInfo();
+            truck3.PrintInformation();
             Console.WriteLine("***********************************************************************************************\n");
 
+
+            //Testing typeconversion from truck -> car
+            Car truck1ToCar = truck1;
+            truck1ToCar.TestTypeConversion();
+
+            //Console.ReadLine(); to keep the page visible on Visual Studio
             Console.ReadLine();
 
         }
