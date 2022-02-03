@@ -29,13 +29,12 @@ namespace VehicleAndCar
             Truck truck2 = new Truck("Volvo", "FM7", 1999, 16740, "7.0L", "Truck", 2, 18000, 3000);
             Truck truck3 = new Truck("Scania", "R560", 2008, 19840, "16L", "Truck", 2, 14000, 2000);
 
-
+            //Vehicle printinfo:
             //vehicleA.PrintInformation();
-            Console.WriteLine("***********************************************************************************************\n");
             //vehicleB.PrintInformation();
-            Console.WriteLine("***********************************************************************************************\n");
             //vehicleC.PrintInformation();
-            Console.WriteLine("***********************************************************************************************\n");
+            
+            //Car printinfo:
             Console.WriteLine(carA.ToString());
             Console.WriteLine("***********************************************************************************************\n");
             Console.WriteLine(carB.ToString());
@@ -55,10 +54,10 @@ namespace VehicleAndCar
                 Console.WriteLine($"The cars aren't the same brand or model at all");
             }
 
-            Console.WriteLine("\n");
-
-            //Truck printinfo:
+            
             Console.WriteLine("***********************************************************************************************\n");
+            
+            //Truck printinfo and consumption on it's own line:
             truck1.PrintInformation();
             Console.WriteLine("Consumption: " + truck1.CalculateConsumption());
             Console.WriteLine("***********************************************************************************************\n");
@@ -74,7 +73,7 @@ namespace VehicleAndCar
             Car truck1ToCar = truck1;
             truck1ToCar.TestTypeConversion();
 
-            //Console.ReadLine(); to keep the page visible on Visual Studio
+            
             Console.ReadLine();
 
         }
