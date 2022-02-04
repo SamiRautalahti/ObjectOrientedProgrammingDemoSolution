@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAndBird", "AnimalAndB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleAndCar", "VehicleAndCar\VehicleAndCar.csproj", "{9564BC88-52DD-4D10-AD3E-1156C9290EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreExample", "Store\StoreExample.csproj", "{24168F50-9756-40A1-907E-E773CAB49893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{9564BC88-52DD-4D10-AD3E-1156C9290EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9564BC88-52DD-4D10-AD3E-1156C9290EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9564BC88-52DD-4D10-AD3E-1156C9290EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24168F50-9756-40A1-907E-E773CAB49893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24168F50-9756-40A1-907E-E773CAB49893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24168F50-9756-40A1-907E-E773CAB49893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24168F50-9756-40A1-907E-E773CAB49893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
