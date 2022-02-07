@@ -45,7 +45,7 @@ namespace VehicleAndCar
         //Extra method only visible or this class, used to verify type conversion
         public void TestTypeConversion()
         {
-            Console.WriteLine($"\n\nType conversion was successfull if you see this text!\n");
+            Console.WriteLine($"\n\nType conversion Truck -> Car was successfully completed if you see this text!\n");
         }
     }
 }

@@ -47,11 +47,11 @@ namespace VehicleAndCar
             //Object.Equals Method:
             if (carA.Equals(carB) == true)
             {
-                Console.WriteLine($"The cars are same brand and model");
+                Console.WriteLine("The cars are same brand and model");
             }
             else
             {
-                Console.WriteLine($"The cars aren't the same brand or model at all");
+                Console.WriteLine("The cars aren't the same brand or model at all");
             }
 
             
@@ -72,10 +72,21 @@ namespace VehicleAndCar
             //Testing type conversion from truck -> car
             Car truck1ToCar = truck1;
             truck1ToCar.TestTypeConversion();
-
             
-            Console.ReadLine();
 
+            //Second type conversion won't work but try-catch will inform still
+            Console.WriteLine("Trying to do type conversion Car -> Truck");
+            try
+            {
+                Truck truck = (Truck)carA;
+                Console.WriteLine("Conversion completed successfully\n");
+            }
+            catch
+            {
+                Console.WriteLine("Type conversion couldn't be done\n");
+            }
+
+            Console.ReadLine();
         }
     }
 }
