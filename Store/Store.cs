@@ -32,6 +32,8 @@ namespace StoreExample
 
         public void PrintProducts()
         {
+            Console.WriteLine(this.allProducts.Count);
+
             foreach (Product p in allProducts)
             {
                 Console.WriteLine(p.ToString());
@@ -45,9 +47,9 @@ namespace StoreExample
 
         public void PrintCustomers()
         {
-            Console.WriteLine(this.allCustomers.Count);
+            Console.WriteLine("Asiakkaiden lukumäärä: ", this.allCustomers.Count);
 
-            foreach (Product p in allProducts)
+            foreach (Customer p in allCustomers)
             {
                 Console.WriteLine(p.ToString());
             }

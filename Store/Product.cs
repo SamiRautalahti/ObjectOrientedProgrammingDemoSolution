@@ -39,7 +39,7 @@ namespace StoreExample
 
         public override string ToString()
         {
-            return $"{this.name}, {this.price}, {this.amount}";
+            return $"Nimi: {this.name}, Hinta: {this.price}, Määrä: {this.amount}, Yhteisarvo: {this.CalculateTotal()}";
         }
     }
 }

@@ -47,7 +47,7 @@ namespace StoreExample
 
         public override string ToString()
         {
-            return $"{this.name}, {this.purchases}";
+            return $"Asiakkaan nimi; {this.name}, Ostokset: {this.purchases}, Bonukseet: {this.GetBonus()}";
         }
     }
 }

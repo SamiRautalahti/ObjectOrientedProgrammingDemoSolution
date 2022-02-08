@@ -23,7 +23,7 @@ namespace AnimalAndBird
 
             birds.Sort();
 
-            Console.WriteLine("Järejestetty lista");
+            Console.WriteLine("Järjestetty lista");
             foreach (Bird b in birds)
             {
                 Console.WriteLine(b.ToString());

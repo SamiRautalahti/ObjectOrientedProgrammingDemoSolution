@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookExercise
 {
-    class Book
+    class Book : IComparable<Book>
     {
         public string title;
         public string author;
@@ -43,7 +43,7 @@ namespace BookExercise
         public string GetBookInformation()
         {
             //return this.author + ", " + this.title +", " + this.id +", "+ this.price;
-            return $"{this.author}, {this.title}, {this.id}, {this.price}:F2)";
+            return $"{this.author}, {this.title}, {this.id}, {this.price:F2}";
         }
 
         public void SetId(string idValue)
@@ -78,6 +78,12 @@ namespace BookExercise
             }
             Console.WriteLine($"kutsuva olio {this.title}");
             Console.WriteLine($"parametrina tuleva olio {book.title}");
+        }
+
+        public int CompareTo(Book other)
+        {
+            return this.price.CompareTo(other.price);
+            //throw new NotImplementedException();
         }
     }
 }

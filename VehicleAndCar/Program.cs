@@ -59,13 +59,13 @@ namespace VehicleAndCar
             
             //Truck printinfo and consumption on it's own line:
             truck1.PrintInformation();
-            Console.WriteLine("Consumption: " + truck1.CalculateConsumption());
+            Console.WriteLine("Consumption: " + truck1.CalculateConsumption() + "/kg");
             Console.WriteLine("***********************************************************************************************\n");
             truck2.PrintInformation();
-            Console.WriteLine("Consumption: " + truck2.CalculateConsumption());
+            Console.WriteLine("Consumption: " + truck2.CalculateConsumption() + "/kg");
             Console.WriteLine("***********************************************************************************************\n");
             truck3.PrintInformation();
-            Console.WriteLine("Consumption: " + truck3.CalculateConsumption());
+            Console.WriteLine("Consumption: " + truck3.CalculateConsumption() + "/kg");
             Console.WriteLine("***********************************************************************************************\n");
 
 

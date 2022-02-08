@@ -32,6 +32,8 @@ namespace StoreExample
             Console.WriteLine(" --------------- ");
             Store myStore = new Store("Retkeilykauppa");
             myStore.AddProduct(new Product("Makuupussi", 89.99, 120));
+            myStore.AddProduct(new Product("Teltta", 289.99, 100));
+            myStore.AddProduct(new Product("Telttapatja", 189.99, 220));
             myStore.PrintProducts();
 
 
@@ -53,7 +55,13 @@ namespace StoreExample
             myStore.AddCustomer(customerList.ElementAt(2));
             myStore.AddCustomer(customerList.ElementAt(3));
 
+            //myStore.AddCustomer(customerList[0]);
+            //myStore.AddCustomer(customerList[1]);
+            //myStore.AddCustomer(customerList[2]);
+            //myStore.AddCustomer(customerList[3]);
+
             Console.WriteLine(myStore.ToString());
+            myStore.PrintCustomers();
 
 
             Console.ReadLine();
