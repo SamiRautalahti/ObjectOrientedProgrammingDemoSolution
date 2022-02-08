@@ -47,7 +47,7 @@ namespace StoreExample
 
             foreach (Customer c in customerList)
             {
-                Console.WriteLine($"Asiakkaan {c.ToString()}  Bonus on {c.GetBonus()}");
+                Console.WriteLine($"Asiakkaan {c.ToString()} Bonus on {c.GetBonus()}");
             }
 
             myStore.AddCustomer(customerList.ElementAt(0)); 
@@ -61,7 +61,7 @@ namespace StoreExample
             //myStore.AddCustomer(customerList[3]);
 
             Console.WriteLine(myStore.ToString());
-            myStore.PrintCustomers();
+            //myStore.PrintCustomers();
 
 
             Console.ReadLine();

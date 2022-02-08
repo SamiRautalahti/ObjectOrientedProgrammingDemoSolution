@@ -47,7 +47,7 @@ namespace StoreExample
 
         public void PrintCustomers()
         {
-            Console.WriteLine("Asiakkaiden lukumäärä: ", this.allCustomers.Count);
+            Console.WriteLine("Asiakkaiden lukumäärä: " + this.allCustomers.Count);
 
             foreach (Customer p in allCustomers)
             {
