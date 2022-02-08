@@ -47,11 +47,12 @@ namespace StoreExample
 
         public void PrintCustomers()
         {
-            Console.WriteLine("Asiakkaiden lukumäärä: " + this.allCustomers.Count);
+            Console.WriteLine("Asiakkaiden lukumäärä: " + this.allCustomers.Count + "kpl");
 
             foreach (Customer p in allCustomers)
             {
                 Console.WriteLine(p.ToString());
+                Console.WriteLine("Bonus: " + p.GetBonus());
             }
         }
         

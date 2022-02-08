@@ -61,7 +61,7 @@ namespace StoreExample
             //myStore.AddCustomer(customerList[3]);
 
             Console.WriteLine(myStore.ToString());
-            //myStore.PrintCustomers();
+            myStore.PrintCustomers();
 
 
             Console.ReadLine();
