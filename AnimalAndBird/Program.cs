@@ -10,8 +10,29 @@ namespace AnimalAndBird
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Periytyminen!");
-            Bird birdA = new Bird("Kirka", 12, "BIRD", 2);
+            List<Bird> birds = new List<Bird>();
+            birds.Add(new Bird("Keijo", 5, "BIRD", 2));
+            birds.Add(new Bird("Kaija", 1, "BIRD", 2));
+            birds.Add(new Bird("Maija", 10, "BIRD", 2));
+            birds.Add(new Bird("Raija", 3, "BIRD", 2));
+
+            foreach (Bird b in birds)
+            {
+                Console.WriteLine(b.ToString());
+            }
+
+            birds.Sort();
+
+            Console.WriteLine("Järejestetty lista");
+            foreach (Bird b in birds)
+            {
+                Console.WriteLine(b.ToString());
+            }
+
+
+
+            /*Console.WriteLine("Periytyminen!");
+            Bird birdA = new Bird("Keijo", 11, "BIRD", 2);
             Bird birdB = new Bird("Kaija", 10, "BIRD", 2);
             //birdB.PrintInfo();
 
@@ -27,7 +48,7 @@ namespace AnimalAndBird
             }
 
             Parrot parrotA = new Parrot("Keijo", 20, "BIRD", 2, "Ara-papukaija");
-            Console.WriteLine(parrotA.ToString());
+            Console.WriteLine(parrotA.ToString());*/
 
 
             Console.ReadLine();

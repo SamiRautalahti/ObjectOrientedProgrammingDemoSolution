@@ -15,7 +15,7 @@ namespace AnimalAndBird
         // konstruktori
         public Animal()
         {
-            Console.WriteLine("Animal-kantaluokan muodostin");
+            //Console.WriteLine("Animal-kantaluokan muodostin");
             this.age = 0;
             this.name = string.Empty;
         }
@@ -23,7 +23,7 @@ namespace AnimalAndBird
         // konstruktori
         public Animal(string name, int age)
         {
-            Console.WriteLine("Animal-kantaluojan muodostin");
+            //Console.WriteLine("Animal-kantaluojan muodostin");
             this.name = name;
             this.age = age;
         }

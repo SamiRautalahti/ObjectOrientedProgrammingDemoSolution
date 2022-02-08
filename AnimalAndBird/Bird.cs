@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AnimalAndBird
 {
     // Kantaluokka
-    class Bird : Animal
+    class Bird : Animal, IComparable<Bird>
     {
         protected string birdClass; //luokka
         protected int legCount;
@@ -15,7 +15,7 @@ namespace AnimalAndBird
         // konstruktori
         public Bird()
         {
-            Console.WriteLine("Animal-kantaluokan muodostin");
+            //Console.WriteLine("Animal-kantaluokan muodostin");
             this.birdClass = "lintu";
             this.legCount = 2;
         }
@@ -25,9 +25,16 @@ namespace AnimalAndBird
 
         public Bird(string name, int age, string birdClass, int legs) : base(name, age)
         {
-            Console.WriteLine("Bird-luokan muodostin");
+            //Console.WriteLine("Bird-luokan muodostin");
             this.birdClass = birdClass;
             this.legCount = legs;
+        }
+
+        public int CompareTo(Bird other)
+        {
+            return this.age.CompareTo(other.age);
+
+            //throw new NotImplementedException();
         }
 
         public override bool Equals(object obj)
