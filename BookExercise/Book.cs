@@ -43,7 +43,7 @@ namespace BookExercise
         public string GetBookInformation()
         {
             //return this.author + ", " + this.title +", " + this.id +", "+ this.price;
-            return $"{this.author}, {this.title}, {this.id}, {this.price:F2}";
+            return $"{this.author}, {this.title}, {this.id}, {this.price:F2} EUR";
         }
 
         public void SetId(string idValue)
