@@ -13,11 +13,11 @@ namespace InsurancesDemo
         private bool neutered;
         private double fee;
 
-        public Insurance(String animal, String name, bool neutered, double payment)
+        public Insurance(String animal, String name, bool isNeutered, double payment)
         {
             this.species = animal;
             this.name = name;
-            this.neutered = neutered;
+            this.neutered = isNeutered;
             this.fee = payment;
         }
 
