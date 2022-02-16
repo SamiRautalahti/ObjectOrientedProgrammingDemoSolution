@@ -11,6 +11,7 @@ namespace InsurancesDemo
         static void Main(string[] args)
         {
             InsuranceManager im = new InsuranceManager();
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("vakuutukset:");
             im.AddInsurance("koira", "Rolle", false);
             im.AddInsurance("koira", "Tessu", true);

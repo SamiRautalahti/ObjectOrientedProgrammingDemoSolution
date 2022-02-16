@@ -72,12 +72,12 @@ namespace InsurancesDemo
                 {
                     if (isNeutered == true && s.GetNeuteredInfo() == "leikattu")
                     {
-                        Console.WriteLine($"\n{s.GetSpecies()}, {s.GetName()}, vakuutusmaksu {GetFee(animal, isNeutered)}");
+                        Console.WriteLine($"\n{s.GetSpecies()}, {s.GetName()}, vakuutusmaksu {GetFee(animal, isNeutered)} €");
                     }
 
                     if (isNeutered == false && s.GetNeuteredInfo() == "leikkaamaton")
                     {
-                        Console.WriteLine($"\n{s.GetSpecies()}, {s.GetName()}, vakuutusmaksu {GetFee(animal, isNeutered)}");
+                        Console.WriteLine($"\n{s.GetSpecies()}, {s.GetName()}, vakuutusmaksu {GetFee(animal, isNeutered)} €");
                     }
                 }
             }
