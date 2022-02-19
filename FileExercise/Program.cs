@@ -102,12 +102,10 @@ namespace FileExercise
                 id = "9789511355140",
                 price = 23.95
             });
-            File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", JsonConvert.SerializeObject(bookList));
             // JsonConvert.SerializeObject(Object value);
+            File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", JsonConvert.SerializeObject(bookList));
+            
         }
-
-            
-            
 
             //List<Book> booklist = new List<Book>();
             //booklist.Add(new Book("Fingerpori I", "Pertti Jarla", "9789511355137", 17.95));
@@ -137,11 +135,23 @@ namespace FileExercise
             static void ReadJsonFile()
             {
                 Console.WriteLine("\nReading Json data from books.txt file");
-                
-                // File.ReadAllText(string path, E
+
+            // File.ReadAllText(string path, E
+            List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", Encoding.UTF8));
+            String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt";
+
+            String[] lines;
+            lines = File.ReadAllLines(path);
+
+            Console.WriteLine(lines[0]);
+  
 
 
-                Console.ReadLine();
+            Console.ReadKey();
+
+
+
+            Console.ReadLine();
             }
         }
     }
