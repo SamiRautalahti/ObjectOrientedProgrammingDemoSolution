@@ -103,10 +103,11 @@ namespace FileExercise
                 price = 23.95
             });
             File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", JsonConvert.SerializeObject(bookList));
+            // JsonConvert.SerializeObject(Object value);
         }
 
             
-            // JsonConvert.SerializeObject(Object value);
+            
 
             //List<Book> booklist = new List<Book>();
             //booklist.Add(new Book("Fingerpori I", "Pertti Jarla", "9789511355137", 17.95));
