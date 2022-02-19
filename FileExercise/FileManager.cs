@@ -12,8 +12,8 @@ namespace FileExercise
         {
             public WordListNotFoundException(string message) : base(message)
             {
-
-            }
+            
+        }
         }
 
     class FileManager
