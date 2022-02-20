@@ -144,8 +144,15 @@ namespace FileExercise
             lines = File.ReadAllLines(path);
 
             Console.WriteLine(lines[0]);
-  
 
+            
+
+            if (File.Exists("books.json"))
+            {
+                string content = File.ReadAllText("books.json");
+                Console.WriteLine("Current content of file:");
+                Console.WriteLine(content);
+            }
 
             Console.ReadKey();
 
