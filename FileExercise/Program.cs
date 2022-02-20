@@ -138,7 +138,7 @@ namespace FileExercise
 
             // File.ReadAllText(string path, E
             List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", Encoding.UTF8));
-            String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt";
+            String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json";
 
             String[] lines;
             lines = File.ReadAllLines(path);
