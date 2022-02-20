@@ -103,7 +103,7 @@ namespace FileExercise
                 price = 23.95
             });
             // JsonConvert.SerializeObject(Object value);
-            File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", JsonConvert.SerializeObject(bookList));
+            File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", JsonConvert.SerializeObject(bookList));
             
         }
 
@@ -137,7 +137,7 @@ namespace FileExercise
                 Console.WriteLine("\nReading Json data from books.txt file");
 
             // File.ReadAllText(string path, E
-            List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", Encoding.UTF8));
+            List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8));
             String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json";
 
             String[] lines;
