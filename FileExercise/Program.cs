@@ -146,7 +146,7 @@ namespace FileExercise
             Console.WriteLine(lines[0]);
 
             
-
+            /*
             if (File.Exists("books.json"))
             {
                 string content = File.ReadAllText("books.json");
@@ -154,8 +154,10 @@ namespace FileExercise
                 Console.WriteLine(content);
             }
 
-            Console.ReadKey();
-
+            //Console.ReadKey();
+            Console.WriteLine("________________________________________");
+            */
+            
 
 
             Console.ReadLine();
