@@ -106,7 +106,7 @@ namespace FileExercise
             File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", JsonConvert.SerializeObject(bookList));
             
         }
-
+            //Vaihtoehtoinen tapa lisätä kirjat:
             //List<Book> booklist = new List<Book>();
             //booklist.Add(new Book("Fingerpori I", "Pertti Jarla", "9789511355137", 17.95));
             //booklist.Add(new Book("Fingerpori II", "Pertti Jarla", "9789511355138", 19.95));
