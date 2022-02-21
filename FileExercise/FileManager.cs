@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FileExercise
 {
-        // Custom exception
-        public class WordListNotFoundException : Exception
+    // Custom exception
+    public class WordListNotFoundException : Exception
+    {
+        public WordListNotFoundException(string message) : base(message)
         {
-            public WordListNotFoundException(string message) : base(message)
-            {
-            
+
         }
-        }
+    }
 
     class FileManager
     {
@@ -70,5 +67,5 @@ namespace FileExercise
             string fileContent = File.ReadAllText(filePath, Encoding.UTF8);
             return fileContent;
         }
-   }
-}   
+    }
+}
