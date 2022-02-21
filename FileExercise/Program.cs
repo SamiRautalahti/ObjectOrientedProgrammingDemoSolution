@@ -104,7 +104,7 @@ namespace FileExercise
             });
             // JsonConvert.SerializeObject(Object value);
             File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", JsonConvert.SerializeObject(bookList));
-            
+            // File.WriteAllText(string path, string contents);
         }
             //Vaihtoehtoinen tapa lisätä kirjat:
             //List<Book> booklist = new List<Book>();
@@ -115,7 +115,7 @@ namespace FileExercise
 
 
 
-            // File.WriteAllText(string path, string contents);
+            
   
             
                 // Create a file to write to.
@@ -137,26 +137,30 @@ namespace FileExercise
                 Console.WriteLine("\nReading Json data from books.txt file");
 
             // File.ReadAllText(string path, E
-            List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8));
-            String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json";
+            List<Book> books = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt", Encoding.UTF8));
+            String path = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt";
 
             String[] lines;
             lines = File.ReadAllLines(path);
-
             Console.WriteLine(lines[0]);
 
+            Console.WriteLine("\n");
+
+
+            Console.WriteLine("This is the data taken from the file books.json:");
             
-            /*
-            if (File.Exists("books.json"))
+            if (!File.Exists("books.json"))
             {
-                string content = File.ReadAllText("books.json");
-                Console.WriteLine("Current content of file:");
+                string content = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
                 Console.WriteLine(content);
             }
+            
+            Console.ReadKey();
+            
+            
 
-            //Console.ReadKey();
-            Console.WriteLine("________________________________________");
-            */
+
+            
             
 
 
