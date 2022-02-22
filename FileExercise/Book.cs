@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FileExercise
 {
@@ -57,11 +53,11 @@ namespace FileExercise
             {
                 this.id = "not valid";
             }
-            
+
         }
         public void CompareBook(Book book)
         {
-         
+
             //verrata parametrinä olevan olion kappalehintaa kutsuttavan kappalehintaan
             // palauta tieto siitä, kumpi kirja on kalliimpi.
             if (this.price > book.price)

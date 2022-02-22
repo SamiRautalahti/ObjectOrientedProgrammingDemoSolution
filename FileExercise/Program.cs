@@ -112,14 +112,12 @@ namespace FileExercise
 
         // Create a file to write to.
 
-
         // This text is always added, making the file longer over time
         // if it is not deleted.
 
 
         // Serialize JSON to a file
         // https://www.newtonsoft.com/json/help/html/SerializeWithJsonSerializerToFile.htm
-
 
 
         static void ReadJsonFile()
@@ -146,13 +144,6 @@ namespace FileExercise
             }
 
             Console.ReadKey();
-
-
-
-
-
-
-
 
             Console.ReadLine();
         }
