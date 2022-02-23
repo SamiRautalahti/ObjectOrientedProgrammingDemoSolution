@@ -27,8 +27,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsurancesDemo", "Insurance
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExercise", "FileExercise\FileExercise.csproj", "{1FF86D26-0251-450C-B18E-5D7FA37117FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luokka Storage", "Luokka Storage\Luokka Storage.csproj", "{FE67FB5F-BABD-463C-86D3-BB7DDC059165}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,10 +81,6 @@ Global
 		{1FF86D26-0251-450C-B18E-5D7FA37117FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FF86D26-0251-450C-B18E-5D7FA37117FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FF86D26-0251-450C-B18E-5D7FA37117FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE67FB5F-BABD-463C-86D3-BB7DDC059165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE67FB5F-BABD-463C-86D3-BB7DDC059165}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE67FB5F-BABD-463C-86D3-BB7DDC059165}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE67FB5F-BABD-463C-86D3-BB7DDC059165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
