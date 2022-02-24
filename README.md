@@ -1,5 +1,5 @@
 # ObjectOrientedProgrammingDemoSolution
-This repository consists of all the exercises of the course "AL00CM20-3001 Olio-ohjelmoinnin perusteet 10.1.2022-25.2.2022"
+Tässä repositoriossa on kaikki kurssin aikana tehdyt tehtävät. "AL00CM20-3001 Olio-ohjelmoinnin perusteet 10.1.2022-25.2.2022"
 
 Huom. kävin yksi päivä näitä tehtäviä läpi ja Book-luokan tehtäviä on tuossa palautettana yhteensä 3 kappaletta.
 Eli siinä on ne kaikki tunneilla tehdyt ja täydennetyt.
@@ -14,3 +14,5 @@ Tässä vähän selvennystä:
         
 - Ja sitten Ominaisuudet : Luokka Author on tehtynä tiedostoon BookAndAuthor, jossa päohjelmassa tehtiin oliota author-luokasta.
 Mutta tehtävän osio, siis namespace muuttaminen literature (kirjallisuus) muotoon on kuitenkin edellisessä tehtävässä joka oli siis tiedostossa Book.
+
+Mikäli tulee mitään kysyttävää niin ota ihmeessä yhteyttä: sami.rautalahti@student.lab.fi
