@@ -137,12 +137,26 @@ namespace FileExercise
 
             Console.WriteLine("This is the data taken from the file books.json:");
 
-            if (!File.Exists("books.json"))
+            //List<Book> booksj = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8));
+            //String pathj = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json";
+
+            string jsondata = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
+            List<Book> items = JsonConvert.DeserializeObject<List<Book>>(jsondata);
+
+            foreach (Book s in items)
             {
-                string content = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
-                Console.WriteLine(content);
+                Console.WriteLine(s.GetBookInformation());
             }
 
+
+
+
+            /*if (!File.Exists("books.json"))
+            {
+                string content = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
+                Console.WriteLine(s.GetBookInformation());
+            }*/
+            
             Console.ReadKey();
 
             Console.ReadLine();
