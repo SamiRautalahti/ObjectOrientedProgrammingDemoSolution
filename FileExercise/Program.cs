@@ -70,6 +70,7 @@ namespace FileExercise
             const string jsonFile = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.txt";
 
             List<Book> bookList = new List<Book>();
+
             bookList.Add(new Book()
             {
                 title = "Fingerpori I",
@@ -77,6 +78,7 @@ namespace FileExercise
                 id = "9789511355137",
                 price = 17.95
             });
+
             bookList.Add(new Book()
             {
                 title = "Fingerpori II",
@@ -84,6 +86,7 @@ namespace FileExercise
                 id = "9789511355138",
                 price = 19.95
             });
+
             bookList.Add(new Book()
             {
                 title = "Fingerpori III",
@@ -91,6 +94,7 @@ namespace FileExercise
                 id = "9789511355139",
                 price = 21.95
             });
+
             bookList.Add(new Book()
             {
                 title = "Fingerpori IV",
@@ -98,6 +102,7 @@ namespace FileExercise
                 id = "9789511355140",
                 price = 23.95
             });
+
             // JsonConvert.SerializeObject(Object value);
             File.WriteAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", JsonConvert.SerializeObject(bookList));
             // File.WriteAllText(string path, string contents);
@@ -137,9 +142,6 @@ namespace FileExercise
 
             Console.WriteLine("This is the data taken from the file books.json:");
 
-            //List<Book> booksj = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8));
-            //String pathj = @"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json";
-
             string jsondata = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
             List<Book> items = JsonConvert.DeserializeObject<List<Book>>(jsondata);
 
@@ -147,17 +149,6 @@ namespace FileExercise
             {
                 Console.WriteLine(s.GetBookInformation());
             }
-
-
-
-
-            /*if (!File.Exists("books.json"))
-            {
-                string content = File.ReadAllText(@"C:\Users\sampp\Source\Repos\SamiRautalahti\ObjectOrientedProgrammingDemoSolution\FileExercise\books.json", Encoding.UTF8);
-                Console.WriteLine(s.GetBookInformation());
-            }*/
-            
-            Console.ReadKey();
 
             Console.ReadLine();
         }
