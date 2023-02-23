@@ -1,5 +1,8 @@
 # ObjectOrientedProgrammingDemoSolution
-Tässä repositoriossa on kaikki kurssin aikana tehdyt tehtävät. "AL00CM20-3001 Olio-ohjelmoinnin perusteet 10.1.2022-25.2.2022"
+
+"AL00CM20-3001 Olio-ohjelmoinnin perusteet 10.1.2022-25.2.2022"
+
+Tässä repositoriossa on kaikki kurssin aikana tehdyt tehtävät.
 
 Huom. kävin yksi päivä näitä tehtäviä läpi ja Book-luokan tehtäviä on tuossa palautettana yhteensä 3 kappaletta.
 Eli siinä on ne kaikki tunneilla tehdyt ja täydennetyt.
