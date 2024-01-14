@@ -17,5 +17,3 @@ Tässä vähän selvennystä:
         
 - Ja sitten Ominaisuudet : Luokka Author on tehtynä tiedostoon BookAndAuthor, jossa päohjelmassa tehtiin oliota author-luokasta.
 Mutta tehtävän osio, siis namespace muuttaminen literature (kirjallisuus) muotoon on kuitenkin edellisessä tehtävässä joka oli siis tiedostossa Book.
-
-Mikäli tulee mitään kysyttävää niin ota ihmeessä yhteyttä: sami.rautalahti@student.lab.fi
