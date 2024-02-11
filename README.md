@@ -7,7 +7,7 @@ Tässä repositoriossa on kaikki kurssin aikana tehdyt tehtävät.
 Huom. kävin yksi päivä näitä tehtäviä läpi ja Book-luokan tehtäviä on tuossa palautettana yhteensä 3 kappaletta.
 Eli siinä on ne kaikki tunneilla tehdyt ja täydennetyt.
 
-Tässä vähän selvennystä:
+Tässä vähän selvennystä eri tehtävistä:
 
 - Luokka ja olio : Luokka Book tehtävä on siis tiedostossa BookExercise, jossa tehdään siis vertailumetodi  public void CompareBook(Book book)
 
